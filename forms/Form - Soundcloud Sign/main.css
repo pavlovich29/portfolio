@@ -1,0 +1,171 @@
+body {
+    background-color: #ffcc00;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+}
+
+p,
+label {
+    font: normal 14px/16px Tahoma, sans-serif;
+    color: #777;
+}
+
+/************* TOP PART OF FORM **************/
+
+.top_part {
+    background-color: #323232;
+    padding: 27px 25px 0px;
+    overflow: hidden;
+}
+
+.logo img {
+    margin-top: 4px;
+}
+
+.logo {
+    width: 80px;
+    float: left;
+}
+
+.nav_tabs {
+    width: 370px;
+    float: right;
+}
+
+.nav_tabs ul {
+    overflow: hidden;
+}
+
+.nav_tabs li {
+    float: right;
+    max-width: 185px;
+}
+
+.nav_tabs li a {
+    display: block;
+    color: #8f8f8f;
+    font: normal 16px/18px Tahoma, sans-serif;
+    padding: 13px 18px 42px;
+}
+
+.nav_tabs li.active a {
+    color: #323232;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+/************* MAIN CONTENT OF FORM **************/
+
+.main_content {
+    padding: 25px;
+}
+
+.buttons {
+    overflow: hidden;
+    padding-bottom: 25px;
+    background: url("../images/line.png") no-repeat center bottom;
+}
+
+.buttons a {
+    display: block;
+    width: 162px;
+    font: normal 15px/17px Tahoma, sans-serif;
+    color: #fff;
+    padding: 16px 10px 16px 46px;
+}
+
+.facebook {
+    float: left;
+    background: #3b5998 url("../images/facebook-icon.png") no-repeat 18px 16px;
+}
+
+.google {
+    float: right;
+    background: #df4a32 url("../images/google-icon.png") no-repeat 16px 17px;
+}
+
+/************* MAIN FORM **************/
+
+label {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 6px;
+}
+
+input.email,
+input.password {
+    border: 1px solid #c7c7c7;
+    font: normal 14px/16px Tahoma, sans-serif;
+    color: #323232;
+    padding: 16px 20px 16px 47px;
+    width: 450px;
+    background: url("../images/email-icon.png") no-repeat 18px 15px;
+    box-sizing: border-box;
+}
+
+input.email:focus,
+input.password:focus {
+    border-color: #ff8800;
+}
+
+input.password {
+    background: url("../images/password-icon.png") no-repeat 18px 13px;
+}
+
+.checkbox_remember {
+    text-align: right;
+    padding: 25px 3px 6px 0px;
+}
+
+.checkbox_remember label {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px;
+    color: #c7c7c7;
+}
+
+.checkbox_remember input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.actions {
+    overflow: hidden;
+}
+
+.forget {
+    width: 220px;
+    float: left;
+    padding-top: 10px;
+}
+
+.forget a {
+    color: #ff8800;
+}
+
+.action_buttons {
+    width: 220px;
+    float: right;
+    overflow: hidden;
+}
+
+.action_buttons input {
+    display: block;
+    font: normal 14px/16px Tahoma, sans-serif;
+    color: #ff8800;
+    background: none;
+    border: none;
+    float: right;
+    padding: 10px 20px;
+}
+
+.action_buttons input.submit {
+    background-color: #ff8800;
+    padding: 10px 41px;
+    color: #fff;
+}
