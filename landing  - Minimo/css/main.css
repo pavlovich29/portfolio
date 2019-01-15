@@ -1,0 +1,500 @@
+/********** BASIC SETTING **********/
+
+@font-face {
+    font-family: 'playfair_displayblack';
+    src: url('../fonts/playfairdisplay-black-webfont-webfont.eot');
+    src: url('../fonts/playfairdisplay-black-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/playfairdisplay-black-webfont-webfont.woff2') format('woff2'), url('../fonts/playfairdisplay-black-webfont-webfont.woff') format('woff'), url('../fonts/playfairdisplay-black-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('../fonts/playfairdisplay-bold-webfont-webfont.eot');
+    src: url('../fonts/playfairdisplay-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/playfairdisplay-bold-webfont-webfont.woff2') format('woff2'), url('../fonts/playfairdisplay-bold-webfont-webfont.woff') format('woff'), url('../fonts/playfairdisplay-bold-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('../fonts/playfairdisplay-italic-webfont-webfont.eot');
+    src: url('../fonts/playfairdisplay-italic-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/playfairdisplay-italic-webfont-webfont.woff2') format('woff2'), url('../fonts/playfairdisplay-italic-webfont-webfont.woff') format('woff'), url('../fonts/playfairdisplay-italic-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../fonts/playfairdisplay-regular-webfont-webfont.eot');
+    src: url('../fonts/playfairdisplay-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/playfairdisplay-regular-webfont-webfont.woff2') format('woff2'), url('../fonts/playfairdisplay-regular-webfont-webfont.woff') format('woff'), url('../fonts/playfairdisplay-regular-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../fonts/ubuntu-light-webfont-webfont.eot');
+    src: url('../fonts/ubuntu-light-webfont-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntu-light-webfont-webfont.woff2') format('woff2'), url('../fonts/ubuntu-light-webfont-webfont.woff') format('woff'), url('../fonts/ubuntu-light-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-width: 1100px;
+    font: normal 14px/24px 'playfair_displayregular', 'Times New Roman', sans-serif;
+    color: #626262;
+}
+
+.fixed_width_container {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/********** HEADING **********/
+
+h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 11px;
+}
+
+h2 {
+    color: #b4ad9e;
+    font: normal 14px/24px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: normal 20px/35px 'playfair_displayregular', 'Times New Roman', sans;
+    margin-top: 15px;
+}
+
+/********** HEADER **********/
+
+header .fixed_width_container {
+    padding-top: 68px;
+    padding-bottom: 95px;
+}
+
+header .logo {
+    float: left;
+    width: 119px;
+    display: block;
+}
+
+/* Navigation */
+
+header nav {
+    float: right;
+    width: 940px;
+    text-align: right;
+}
+
+header nav li,
+header nav li a {
+    display: inline-block;
+}
+
+header nav li {
+    margin-left: 93px;
+}
+
+header nav li a {
+    color: #626262;
+    text-transform: uppercase;
+}
+
+header nav li a:hover {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.main_image {
+    margin-top: 93px;
+}
+
+/********** MAIN CONTENT **********/
+
+.main_content {
+    overflow: hidden;
+}
+
+aside {
+    float: right;
+    width: 273px;
+}
+
+main article {
+    float: left;
+    width: 661px;
+    margin-left: 80px;
+}
+
+main article>p {
+    margin-top: 23px;
+    margin-bottom: 61px;
+}
+
+main article>p strong {
+    font-family: 'playfair_displayblack', 'Times New Roman', sans;
+    font-weight: normal;
+}
+
+article>img {
+    margin-top: 50px;
+}
+
+main article .italic {
+    font-family: 'playfair_displayitalic', 'Times New Roman', sans;
+    margin: 57px 10px 0 21px;
+}
+
+/* Social icons */
+
+article .social_icons {
+    text-align: right;
+    padding-top: 9px;
+    margin-bottom: 108px;
+}
+
+article .social_icons p {
+    color: #b4ad9e;
+    font: normal 13px/24px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.social_icons li,
+.social_icons li a {
+    display: inline-block;
+    height: 17px;
+    margin-left: 15px;
+}
+
+.social_icons a:hover {
+    background-position: center -17px;
+}
+
+.social_icons .facebook {
+    width: 9px;
+    background: url('../images/facebook.png') no-repeat center 0;
+}
+
+.social_icons .twitter {
+    width: 18px;
+    background: url('../images/twitter.png') no-repeat center 0;
+}
+
+.social_icons .google {
+    width: 17px;
+    background: url('../images/google.png') no-repeat center 0;
+}
+
+.social_icons .tumblr {
+    width: 11px;
+    background: url('../images/tumblr.png') no-repeat center 0;
+}
+
+.social_icons .pinterest {
+    width: 18px;
+    background: url('../images/pinterest.png') no-repeat center 0;
+}
+
+/********** ASIDE **********/
+
+aside h3 {
+    font-size: 24px;
+    line-height: 20px;
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+
+aside h3+p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 22px;
+}
+
+aside .social_icons {
+    margin-bottom: 60px;
+}
+
+aside .social_icons a {
+    display: inline-block;
+    margin-right: 13px;
+    height: 17px;
+}
+
+aside .social_icons .facebook {
+    width: 9px;
+    background: url('../images/aside-facebook.png') no-repeat center 0;
+}
+
+aside .social_icons a:hover {
+    background-position: center -17px;
+}
+
+aside .social_icons .instagram {
+    width: 18px;
+    background: url('../images/aside-instagram.png') no-repeat center 0;
+}
+
+aside .social_icons .pinterest {
+    width: 18px;
+    background: url('../images/aside-pinterest.png') no-repeat center 0;
+}
+
+aside h2 {
+    margin-bottom: 25px;
+}
+
+aside ul {
+    margin-bottom: 45px;
+}
+
+aside ul li {
+    background: url("../images/ellipse.png") no-repeat 2px 8px;
+    color: #b4ad9e;
+    margin-bottom: 20px;
+    padding-left: 29px;
+}
+
+aside ul li a:hover {
+    color: #000;
+}
+
+aside ul li .number_comments:hover {
+    color: #754c02;
+}
+
+aside ul a {
+    font: normal 16px/25px 'playfair_displayregular', 'Times New Roman', sans;
+    color: #626262;
+}
+
+aside ul .number_comments {
+    display: block;
+    font: normal 12px/24px 'ubuntulight', Arial, sans-serif;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+/********** SECTION "OTHER POSTS" **********/
+
+.other_posts {
+    background-color: #f5f5f5;
+}
+
+.other_posts_container {
+    padding: 65px 80px 83px;
+}
+
+.post_items {
+    overflow: hidden;
+    margin-top: 33px;
+}
+
+.post_items .post_items_col1 {
+    width: 273px;
+    float: left;
+    margin-left: 40px;
+    display: block;
+    color: #626262;
+}
+
+.post_items .post_items_col1:hover {
+    color: #000;
+}
+
+.post_items .post_items_col1:first-child {
+    margin-left: 0;
+}
+
+/********** SECTION "COMMETS" **********/
+
+.comments_container {
+    padding: 62px 80px 67px;
+}
+
+.comments h2 {
+    margin-bottom: 28px;
+}
+
+.comment_item {
+    margin-bottom: 44px;
+}
+
+.comment_item:nth-child(4) {
+    margin-bottom: 31px;
+}
+
+.comment_item .name {
+    font-family: 'playfair_displaybold', 'Times New Roman', sans;
+}
+
+.comment_image {
+    width: 70px;
+    float: left;
+    padding-top: 7px;
+}
+
+.comment {
+    margin-left: 108px;
+}
+
+.comment p {
+    margin-bottom: 4px;
+}
+
+.comment a {
+    margin-top: 15px;
+    color: #b4ad9e;
+    font: normal 14px/20px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.comment a:hover {
+    color: #000;
+}
+
+textarea {
+    width: 791px;
+    min-height: 68px;
+    font: normal 14px/20px 'ubuntulight', Arial, sans-serif;
+    background: #fff;
+    color: #626262;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 25px 30px 5px 30px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c8c8c8;
+    /* Firefox */
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #c8c8c8;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #c8c8c8;
+}
+
+.comments .social_icons {
+    text-align: right;
+}
+
+.comments .social_icons p {
+    color: #b4ad9e;
+    font: normal 14px/24px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-right: 19px;
+}
+
+.social_icons li,
+.social_icons li a {
+    display: inline-block;
+    height: 17px;
+    margin-left: 9px;
+}
+
+.social_icons .facebook_comment {
+    width: 9px;
+    background: url('../images/facebook-comments.png') no-repeat center 0;
+}
+
+.social_icons a:hover {
+    background-position: center -17px;
+}
+
+.social_icons .twitter_comment {
+    width: 18px;
+    background: url('../images/twitter-comments.png') no-repeat center 0;
+}
+
+/********** FOOTER **********/
+
+footer {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.footer_container {
+    padding: 35px 1px 38px 80px;
+    overflow: hidden;
+}
+
+footer .col1 {
+    width: 673px;
+    float: left;
+}
+
+footer .col1 a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #000;
+}
+
+footer .col1 a:hover {
+    text-decoration: underline;
+}
+
+footer .col1 a {
+    margin-right: 12px;
+}
+
+footer .col2 {
+    width: 272px;
+    float: right;
+    text-align: right;
+}
+
+footer .col2 p,
+footer .col2 a {
+    display: inline-block;
+}
+
+footer .col2 a {
+    margin-left: 13px;
+    height: 15px;
+}
+
+footer .col2 .facebook {
+    width: 9px;
+    background: url('../images/facebook-footer.png') no-repeat center 0;
+}
+
+footer .col2 .twitter {
+    width: 18px;
+    background: url('../images/twitter-footer.png') no-repeat center 0;
+}
+
+footer .col2 .instagram {
+    width: 18px;
+    background: url('../images/instagram-footer.png') no-repeat center 0;
+}
+
+footer .col2 a:hover {
+    background-position: center -15px;
+}
